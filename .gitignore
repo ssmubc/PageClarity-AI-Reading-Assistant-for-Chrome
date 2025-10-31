@@ -1,0 +1,39 @@
+# API Keys and Secrets
+src/config.js
+*.key
+*.env
+.env*
+
+# Development files
+node_modules/
+.DS_Store
+Thumbs.db
+
+# IDE files
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# Logs
+*.log
+logs/
+
+# Temporary files
+*.tmp
+*.temp
+generate_icons.html
+
+# Chrome extension packaging
+*.crx
+*.pem
+key.pem
+
+# OS generated files
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
