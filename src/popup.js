@@ -7,7 +7,6 @@ const GEMINI_API_URL = 'https://generativelanguage.googleapis.com/v1/models/gemi
 // Gemini API fallback function
 async function callGeminiAPI(prompt) {
   console.log('=== GEMINI API CALL ===');
-  console.log('API Key:', GEMINI_API_KEY.substring(0, 10) + '...');
   console.log('Prompt length:', prompt.length);
   
   if (!GEMINI_API_KEY || GEMINI_API_KEY === 'YOUR_GEMINI_API_KEY_HERE') {
@@ -15,7 +14,6 @@ async function callGeminiAPI(prompt) {
   }
   
   const url = `${GEMINI_API_URL}?key=${GEMINI_API_KEY}`;
-  console.log('Calling URL:', url.substring(0, 80) + '...');
   
   const response = await fetch(url, {
     method: 'POST',
@@ -361,7 +359,7 @@ document.getElementById('summarize-selection').addEventListener('click', async (
   try {
     let selection = await getSelectedText();
     if (!selection) {
-      // Fallback: ask user to paste text
+      // Security fallback: prompt is necessary for restricted sites where content script access is blocked
       selection = prompt('🔒 For your security, this site restricts text access. Please paste the text you\'d like to summarize:');
       if (!selection) {
         showStatus('No text provided', true);
@@ -415,6 +413,7 @@ document.getElementById('translate-selection').addEventListener('click', async (
   try {
     let selection = await getSelectedText();
     if (!selection) {
+      // Security fallback: prompt is necessary for restricted sites where content script access is blocked
       selection = prompt('🔒 For your security, this site restricts text access. Please paste the text you\'d like to translate:');
       if (!selection) {
         showStatus('No text provided', true);
@@ -438,6 +437,7 @@ document.getElementById('proofread-selection').addEventListener('click', async (
   try {
     let selection = await getSelectedText();
     if (!selection) {
+      // Security fallback: prompt is necessary for restricted sites where content script access is blocked
       selection = prompt('🔒 For your security, this site restricts text access. Please paste the text you\'d like to proofread:');
       if (!selection) {
         showStatus('No text provided', true);
