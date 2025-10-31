@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <link rel="stylesheet" href="popup.css">
+</head>
+<body>
+  <div class="header">
+    <h1>PageClarity</h1>
+    <p>Learn, Simplify, Translate: Without Leaving the Page</p>
+  </div>
+
+  <div class="tabs">
+    <button class="tab-button active" data-tab="summary">Summary</button>
+    <button class="tab-button" data-tab="simplify">Simplify</button>
+    <button class="tab-button" data-tab="translate">Translate</button>
+    <button class="tab-button" data-tab="proofread">Proofread</button>
+    <button class="tab-button" data-tab="ask">Ask</button>
+  </div>
+
+  <div class="tab-content active" id="summary">
+    <button id="summarize-page">Summarize page</button>
+    <button id="summarize-selection">Summarize selection</button>
+    <div id="summary-output" class="output"></div>
+  </div>
+
+  <div class="tab-content" id="simplify">
+    <select id="rewrite-style">
+      <option value="plain">Plain English</option>
+      <option value="friendly">Friendly</option>
+      <option value="shorter">Shorter</option>
+    </select>
+    <button id="rewrite-selection">Rewrite selection</button>
+    <div id="rewrite-output" class="output"></div>
+    <button id="copy-rewrite">Copy to Clipboard</button>
+  </div>
+
+  <div class="tab-content" id="translate">
+    <select id="target-language">
+      <option value="es">Spanish</option>
+      <option value="fr">French</option>
+      <option value="de">German</option>
+      <option value="hi">Hindi</option>
+      <option value="zh">Chinese</option>
+      <option value="ja">Japanese</option>
+    </select>
+    <button id="translate-selection">Translate selection</button>
+    <div id="translate-output" class="output"></div>
+  </div>
+
+  <div class="tab-content" id="proofread">
+    <button id="proofread-selection">Proofread selected input</button>
+    <div id="proofread-output" class="output"></div>
+    <button id="copy-proofread">Copy to Clipboard</button>
+  </div>
+
+  <div class="tab-content" id="ask">
+    <input type="text" id="user-question" placeholder="What do you want to know?">
+    <button id="ask-page">Ask</button>
+    <div id="ask-output" class="output"></div>
+  </div>
+
+  <div id="status" class="status"></div>
+
+  <script src="config.js"></script>
+  <script src="popup.js"></script>
+</body>
+</html>
