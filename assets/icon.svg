@@ -1,0 +1,20 @@
+<svg width="128" height="128" viewBox="0 0 128 128" xmlns="http://www.w3.org/2000/svg">
+  <!-- Background circle -->
+  <circle cx="64" cy="64" r="60" fill="#4285f4" stroke="#1a73e8" stroke-width="2"/>
+  
+  <!-- Document/page icon -->
+  <rect x="32" y="24" width="48" height="64" rx="4" fill="white" stroke="#1a73e8" stroke-width="2"/>
+  
+  <!-- Text lines representing content -->
+  <line x1="40" y1="36" x2="64" y2="36" stroke="#4285f4" stroke-width="2" stroke-linecap="round"/>
+  <line x1="40" y1="44" x2="72" y2="44" stroke="#4285f4" stroke-width="2" stroke-linecap="round"/>
+  <line x1="40" y1="52" x2="68" y2="52" stroke="#4285f4" stroke-width="2" stroke-linecap="round"/>
+  
+  <!-- Clarity/lens effect - subtle glow -->
+  <circle cx="64" cy="64" r="8" fill="none" stroke="#34a853" stroke-width="3" opacity="0.8"/>
+  <circle cx="64" cy="64" r="4" fill="#34a853" opacity="0.6"/>
+  
+  <!-- AI sparkle -->
+  <path d="M88 32 L92 28 L96 32 L92 36 Z" fill="#fbbc04"/>
+  <path d="M90 30 L94 26 L98 30 L94 34 Z" fill="#fbbc04" opacity="0.7"/>
+</svg>
