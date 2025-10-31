@@ -156,7 +156,7 @@ For full AI functionality, configure the Gemini API:
    - Click "Create API Key"
    - Copy the generated key
 
-2. **Configure the extension**:
+2. **Configure the extension** (update API key in both files):
    - Copy the configuration template:
    ```bash
    cp src/config.example.js src/config.js
@@ -166,6 +166,11 @@ For full AI functionality, configure the Gemini API:
    ```javascript
    const GEMINI_API_KEY = 'your-actual-api-key-here';
    ```
+   
+   - **Also update popup.js**:
+   - Open `src/popup.js` in any text editor
+   - Find line 4: `const GEMINI_API_KEY = 'YOUR_GEMINI_API_KEY_HERE';`
+   - Replace `YOUR_GEMINI_API_KEY_HERE` with your actual API key
 
 3. **Reload extension**:
    - Go to `chrome://extensions/`

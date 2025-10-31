@@ -18,20 +18,27 @@ This guide will help you set up PageClarity to use real AI functionality. After 
 
 ### 2. Configure Extension
 
+**Update API key in both files:**
+
 1. **Copy the configuration template**:
    ```bash
    cp src/config.example.js src/config.js
    ```
    (On Windows, you can also copy the file manually in File Explorer)
 
-2. **Edit the configuration file**:
+2. **Edit config.js**:
    - Open `src/config.js` in any text editor (Notepad, VS Code, etc.)
    - Replace `YOUR_GEMINI_API_KEY_HERE` with your actual API key:
    ```javascript
    const GEMINI_API_KEY = 'your-actual-api-key-here';
    ```
 
-3. **Save the file**
+3. **Edit popup.js**:
+   - Open `src/popup.js` in any text editor (Notepad, VS Code, etc.)
+   - Find line 4: `const GEMINI_API_KEY = 'YOUR_GEMINI_API_KEY_HERE';`
+   - Replace `YOUR_GEMINI_API_KEY_HERE` with your actual API key
+
+4. **Save both files**
 
 ### 3. Reload Extension
 
