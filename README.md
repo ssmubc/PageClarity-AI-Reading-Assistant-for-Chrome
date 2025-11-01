@@ -20,7 +20,7 @@ PageClarity is a Chrome extension that enhances your web browsing experience wit
 
 ## Features
 
-- **Smart Summarization**: Get TL;DR summaries of entire pages or selected text
+- **Smart Summarization**: Get concise summaries of entire pages or selected text
 - **Text Simplification**: Rewrite complex text in plain English, friendly tone, or shorter format
 - **Multi-language Translation**: Translate selected text into 6+ languages (Spanish, French, German, Hindi, Chinese, Japanese)
 - **Grammar & Spell Check**: Proofread and correct writing errors instantly
@@ -94,7 +94,7 @@ PageClarity uses a **three-tier hybrid AI approach** for maximum reliability and
 ### Feature-Specific Usage
 
 **Summarization**
-- Click "Summarize page" for full page TL;DR
+- Click "Summarize page" for full page summary
 - Select text → "Summarize selection" for specific content
 
 **Simplification** 
