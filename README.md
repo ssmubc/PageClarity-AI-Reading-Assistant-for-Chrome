@@ -267,10 +267,13 @@ pageclarity/
 │       ├── proofread.js      # Proofreader API wrapper
 │       └── prompt.js         # Prompt API wrapper
 ├── assets/
+│   ├── icon.svg             # SVG icon source
 │   ├── icon16.png           # Extension icons (16x16)
 │   ├── icon48.png           # Extension icons (48x48)
 │   └── icon128.png          # Extension icons (128x128)
+├── ArchitectureDiagram.png   # System architecture diagram
 ├── demo.html                 # Feature testing page
+├── generate_icons.html       # Icon generation utility
 ├── README.md                 # This file
 ├── SETUP.md                  # Detailed setup instructions
 ├── LICENSE                   # MIT License
