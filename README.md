@@ -6,8 +6,10 @@ PageClarity is a Chrome extension that enhances your web browsing experience wit
 
 ## Table of Contents
 
+- [Demo Video](#demo-video)
 - [Features](#features)
 - [AI Technology](#ai-technology)
+- [Architecture Diagram](#architecture-diagram)
 - [Quick Start](#quick-start)
 - [How to Use](#how-to-use)
 - [Installation](#installation)
@@ -17,6 +19,16 @@ PageClarity is a Chrome extension that enhances your web browsing experience wit
 - [Privacy & Security](#privacy--security)
 - [Contributing](#contributing)
 - [License](#license)
+
+## Demo Video
+
+**Public Access Link to the Demo Video (YouTube Link):**
+https://youtu.be/vhSsu7vCxQY
+
+<video controls src="https://private-user-images.githubusercontent.com/97367319/508505843-392276cd-40b2-46b1-b9c9-fd955056884e.mp4?jwt=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTUiLCJleHAiOjE3NjE5NjYyNTUsIm5iZiI6MTc2MTk2NTk1NSwicGF0aCI6Ii85NzM2NzMxOS81MDg1MDU4NDMtMzkyMjc2Y2QtNDBiMi00NmIxLWI5YzktZmQ5NTUwNTY4ODRlLm1wND9YLUFtei1BbGdvcml0aG09QVdTNC1ITUFDLVNIQTI1NiZYLUFtei1DcmVkZW50aWFsPUFLSUFWQ09EWUxTQTUzUFFLNFpBJTJGMjAyNTExMDElMkZ1cy1lYXN0LTElMkZzMyUyRmF3czRfcmVxdWVzdCZYLUFtei1EYXRlPTIwMjUxMTAxVDAyNTkxNVomWC1BbXotRXhwaXJlcz0zMDAmWC1BbXotU2lnbmF0dXJlPTQxYzM1ODcxZTdhYTdlMWY1N2JiZTNjYzZjMjVkYjk1MmY4ZDE1MDI4YTdiYjIxYWIxYjFiOTg0NGY0N2FkYzQmWC1BbXotU2lnbmVkSGVhZGVycz1ob3N0In0.jTE9aRhN0uyGK1k5XWuDke9el6ZBxzIW9JFt2ee1EZc" title="PageClarity Demo Video - AI Reading Assistant">
+</video>
+
+*3-minute walkthrough showing four-tier hybrid AI architecture, Chrome AI integration, Gemini 2.5 Pro fallback, and all five AI features in action.*
 
 ## Features
 
@@ -32,7 +44,7 @@ PageClarity is a Chrome extension that enhances your web browsing experience wit
 
 ### Hybrid AI Architecture
 
-PageClarity uses a **three-tier hybrid AI approach** for maximum reliability and functionality:
+PageClarity uses a **four-tier hybrid AI approach** for maximum reliability and functionality:
 
 1. **Chrome AI First** (Preferred)
    - Uses Chrome's built-in AI (Gemini Nano)
@@ -40,13 +52,19 @@ PageClarity uses a **three-tier hybrid AI approach** for maximum reliability and
    - Private and fast
    - No internet required
 
-2. **Gemini API Fallback** (Cloud-based)
+2. **Smart Routing Layer** (Intelligence)
+   - Automatically switches between AI providers
+   - Handles API availability and errors
+   - Ensures seamless user experience
+   - Optimizes for speed and reliability
+
+3. **Gemini API Fallback** (Cloud-based)
    - Google's **Gemini 2.5 Pro** model via Generative Language API
    - Always available with internet connection
    - Real AI functionality for immediate use
    - Free tier: 15 requests/minute
 
-3. **Demo Mode** (Development)
+4. **Demo Mode** (Development)
    - Placeholder responses for testing
    - Works without any API configuration
    - Helps developers understand functionality
@@ -60,6 +78,12 @@ PageClarity uses a **three-tier hybrid AI approach** for maximum reliability and
 - **Prompt API**: Q&A and contextual queries
 
 **Important**: Chrome AI APIs are currently in **Early Preview** (2025) and require Chrome Canary/Dev with special flags enabled and specific device compatibility. The APIs have moved from the deprecated `window.ai` namespace to `self.ai`. **PageClarity uses Gemini 2.5 Pro as the primary AI provider** to ensure reliable functionality for all users.
+
+## Architecture Diagram
+
+![PageClarity Architecture](./ArchitectureDiagram.png)
+
+*Built on a four-layer hybrid system, PageClarity seamlessly integrates with any webpage. Chrome's built-in AI provides on-device privacy through five specialized APIs: Summarizer, Rewriter, Translator, Proofreader, and Prompt. The intelligent routing layer automatically switches between local Chrome AI and cloud-based Gemini 2.5 Pro, ensuring optimal performance and reliability. This architecture makes PageClarity future-ready for Chrome's evolving AI capabilities while maintaining backward compatibility and graceful fallbacks.*
 
 ## Quick Start
 
