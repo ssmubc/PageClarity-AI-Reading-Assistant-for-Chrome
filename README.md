@@ -1,8 +1,8 @@
-# PageClarity – AI Reading Assistant for Chrome
+# PageClarity - AI Reading Assistant for Chrome
 
 **Learn, Simplify, Translate: Without Leaving the Page**
 
-PageClarity is a Chrome extension that enhances your web browsing experience with AI-powered reading assistance. Get instant summaries, simplify complex text, translate content, proofread writing, and ask questions about any webpage – all without leaving your current tab.
+PageClarity is a Chrome extension that enhances your web browsing experience with AI-powered reading assistance. Get instant summaries, simplify complex text, translate content, proofread writing, and ask questions about any webpage, all without leaving your current tab.
 
 ## Table of Contents
 
