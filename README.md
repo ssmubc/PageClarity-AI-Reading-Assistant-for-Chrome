@@ -17,8 +17,9 @@ PageClarity is a Chrome extension that enhances your web browsing experience wit
 - [Testing](#testing)
 - [Project Structure](#project-structure)
 - [Privacy & Security](#privacy--security)
-- [Contributing](#contributing)
 - [License](#license)
+- [Contributing](#contributing)
+- [Author](#author)
 
 ## Demo Video
 
@@ -296,42 +297,30 @@ pageclarity/
 - Permission-based access to webpage content
 - Fallback prompts for restricted sites
 
-## Contributing
-
-We welcome contributions! Here's how to get started:
-
-1. **Fork the repository**
-2. **Create a feature branch**:
-   ```bash
-   git checkout -b feature/amazing-feature
-   ```
-3. **Make your changes**
-4. **Test thoroughly** with Chrome AI APIs
-5. **Submit a pull request**
-
-### Development Guidelines
-- Follow existing code style
-- Test on multiple websites
-- Ensure Chrome AI compatibility
-- Update documentation as needed
-
 ## License
 
 MIT License - see [LICENSE](LICENSE) file for details.
 
-Copyright (c) 2025 Sharon Van
+Copyright (c) 2025 Sharon Marfatia
 
----
+## Contributing
 
-**Built for the Google Chrome Built-in AI Challenge 2025**
-
-PageClarity demonstrates the power of hybrid AI processing, combining Chrome's built-in capabilities with cloud-based fallbacks to create a seamless, accessible reading assistance tool for all users.
-
-**Targeting Prize Categories:**
-- Best Hybrid AI Implementation
-- Most Practical Application
-- Best User Experience
-
----
+1. Fork the repository
+2. Create a feature branch
+3. Make your changes
+4. Add tests
+5. Submit a pull request
 
 *Made with care for better web accessibility and AI-powered reading assistance.*
+
+
+## Author
+
+**Sharon Marfatia** - Built for the Google Chrome Built-in AI Challenge 2025
+
+- GitHub: [@ssmubc](https://github.com/ssmubc)
+- LinkedIn: [Sharon Marfatia](https://www.linkedin.com/in/sharon-cs)
+
+---
+
+**Built for the Google Chrome Built-in AI Challenge 2025 Hackathon**
